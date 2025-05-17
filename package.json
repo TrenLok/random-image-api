@@ -1,0 +1,53 @@
+{
+  "name": "@trenlok/random-image-api",
+  "version": "1.0.0",
+  "author": "TrenLok",
+  "description": "A simple http server that returns a link to a random image",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/TrenLok/random-image-api#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrenLok/random-image-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TrenLok/random-image-api/issues"
+  },
+  "scripts": {
+    "start": "listhen ./src/app.ts",
+    "dev": "listhen -w ./src/app.ts",
+    "prepare": "husky",
+    "typecheck": "tsc --noEmit",
+    "lint": "pnpm run lint:scripts",
+    "lint:scripts": "eslint . --cache",
+    "format": "pnpm run format:scripts",
+    "format:scripts": "eslint . --cache --fix",
+    "release": "bumpp"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "h3": "^1.15.3",
+    "listhen": "^1.9.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.26.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@stylistic/stylelint-config": "^2.0.0",
+    "@types/node": "^22.15.18",
+    "bumpp": "^10.1.1",
+    "eslint": "^9.26.0",
+    "eslint-import-resolver-typescript": "^4.3.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-unicorn": "^59.0.1",
+    "globals": "^16.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "typescript-eslint": "^8.32.1"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --cache --fix"
+  },
+  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
+}
