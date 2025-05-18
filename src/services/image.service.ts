@@ -45,6 +45,7 @@ class ImageService {
   private reloadImages() {
     this.validateDirectory();
     const all = this.getImages();
+
     if (all.length !== this.imageList.length || all.some((f) => !this.imageList.includes(f))) {
       console.log('🔄 Files changed, reloading images');
       this.loadImages();
@@ -53,9 +54,9 @@ class ImageService {
   }
 
   getNextImage() {
-    if (this.imageList.length === 0) return null;
-
     this.reloadImages();
+
+    if (this.imageList.length === 0) return null;
 
     const image = this.imageList[this.currentIndex];
     this.currentIndex = (this.currentIndex + 1) % this.imageList.length;
