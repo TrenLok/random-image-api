@@ -1,0 +1,7 @@
+node_modules
+.git
+*.md
+.husky
+renovate.json
+eslint.config.js
+*.eslint.json
