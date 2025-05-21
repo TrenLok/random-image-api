@@ -20,6 +20,7 @@ export default tseslint.config(
       '**/*.log',
       '.env',
       '.env.*',
+      'ecosystem.config.cjs',
     ],
   },
   {

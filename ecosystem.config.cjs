@@ -1,6 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const fs = require('node:fs');
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const path = require('node:path');
 
 const nvmrcPath = path.join(process.cwd(), '.nvmrc');
@@ -10,7 +8,6 @@ try {
   nodeVersion = fs.readFileSync(nvmrcPath, 'utf8').trim();
 } catch (error) {
   console.error('Ошибка чтения .nvmrc:', error.message);
-  // eslint-disable-next-line unicorn/no-process-exit
   process.exit(1);
 }
 
