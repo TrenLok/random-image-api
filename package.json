@@ -25,7 +25,7 @@
     "release": "bumpp"
   },
   "dependencies": {
-    "dotenv": "^16.6.1",
+    "dotenv": "^17.4.2",
     "h3": "^1.15.4",
     "listhen": "^1.9.0"
   },
