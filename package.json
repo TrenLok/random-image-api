@@ -33,7 +33,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.35.0",
-    "@stylistic/eslint-plugin": "^5.2.3",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@stylistic/stylelint-config": "^3.0.1",
     "@types/node": "^22.17.2",
     "bumpp": "^10.2.3",
